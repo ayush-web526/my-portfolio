@@ -27,6 +27,7 @@ a{color:#6366f1;text-decoration:none;font-weight:bold}
 <section>
 <h2>About Me</h2>
 <p>I am a BCA student based in Noida Sector 62, originally from Ayodhya. I am passionate about building modern and responsive websites using HTML, CSS, JavaScript and React. Currently focusing on becoming a full-stack developer.</p>
+<p style="line-height:1.7; color:#334155; font-size:16px;">
 </section>
 
 <section>
@@ -41,10 +42,17 @@ a{color:#6366f1;text-decoration:none;font-weight:bold}
 
 <div style="border:1px solid #e0e0e0; border-radius:10px; padding:18px; flex:1; min-width:250px;">
 <h3>💰 Expense Tracker</h3>
-<p style="font-size:14px; color:#555;">Personal expense manager with LocalStorage. Add, delete & auto total.</p>
-<p style="font-size:12px; margin:10px 0;"><b>Tech:</b> HTML, JS, LocalStorage</p>
-<a href="https://ayush-web526.github.io/expense-tracker/" target="_blank">Live Demo</a> | 
-<a href="https://github.com/ayush-web526/expense-tracker" target="_blank">GitHub</a>
+<div class="balance">
+<p style="opacity:0.8">Total Spent</p>
+<h2>₹<span id="total">0</span></h2>
+<p style="font-size:13px;opacity:0.7">By Ayush Pandey</p>
+</div>
+
+<div class="card">
+<input id="title" placeholder="Kya kharcha kiya? Ex: Momos">
+<input id="amount" type="number" placeholder="Amount ₹">
+<select id="cat"><option>🍔 Food</option><option>✈️ Travel</option><option>🛒 Shopping</option><option>📚 Study</option><option>Other</option></select>
+<button onclick="addExp()">+ Add Expense</button>
 </div>
 
 <div style="border:1px solid #e0e0e0; border-radius:10px; padding:18px; flex:1; min-width:250px;">
